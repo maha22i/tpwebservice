@@ -1,0 +1,23 @@
+{
+  "root": "libs/api/core/logging",
+  "sourceRoot": "libs/api/core/logging/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/api/core/logging/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/api/core/logging"],
+      "options": {
+        "jestConfig": "libs/api/core/logging/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

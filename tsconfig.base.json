@@ -1,0 +1,49 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@library/api/core/abstract": ["libs/api/core/abstract/src/index.ts"],
+      "@library/api/core/error": ["libs/api/core/error/src/index.ts"],
+      "@library/api/core/logging": ["libs/api/core/logging/src/index.ts"],
+      "@library/api/core/pagination": ["libs/api/core/pagination/src/index.ts"],
+      "@library/api/documentation/core": [
+        "libs/api/documentation/core/src/index.ts"
+      ],
+      "@library/api/repository/core": ["libs/api/repository/core/src/index.ts"],
+      "@library/api/repository/error": [
+        "libs/api/repository/error/src/index.ts"
+      ],
+      "@library/api/validation/core": ["libs/api/validation/core/src/index.ts"],
+      "@library/api/validation/id": ["libs/api/validation/id/src/index.ts"],
+      "@library/api/validation/pagination": [
+        "libs/api/validation/pagination/src/index.ts"
+      ],
+      "@library/common/resource/author": [
+        "libs/common/resource/author/src/index.ts"
+      ],
+      "@library/common/resource/book": [
+        "libs/common/resource/book/src/index.ts"
+      ],
+      "@library/common/resource/core": [
+        "libs/common/resource/core/src/index.ts"
+      ],
+      "@library/common/resource/error": [
+        "libs/common/resource/error/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
